@@ -4,26 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- daisyui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+ 
       <!-- tailwind cdn -->
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ 
   </head>
-    <title>Document</title>
+    <title >Document</title>
   </head >
-  <body class=" bg-[#F4F5F7] h-[100vh] flex justify-center items-center">
-    <form class="  bg-white rounded-2xl p-5">
-        <div class=>
-            <label for="">Mobile Number</label><br>
-            <input type="text" placeholder="Type here" class="input bg-[#F4F5F7]" />
+  <body>
+    <h1 id="number">0</h1>
+  
+    <button id="button-1">button 1</button>
+    <button id="button-2">button 2</button>
+    <button id="button-3">button 3</button>
+    <button id="button-4">button 4</button>
+    <script>
+      // document.getElementById('button-1').addEventListener('click',function(){
+      //   const h1= document.getElementById('number')
+      //   h1.innerText ='1'
+       
+      // })
+      // document.getElementById('button-2').addEventListener('click',function(){
+      //   document.getElementById('number').innerText='2'
 
-        </div>
-           <div class=>
-            <label for=""></label>4 Digit Pin<br>
-            <input type="text" placeholder="Type here" class="input bg-[#F4F5F7] " />
+      // })
+      //    document.getElementById('button-3').addEventListener('click',function(){
+      //   document.getElementById('number').innerText='3'
 
-        </div>
-        <button class="btn btn-primary">Primary</button>
-    </form>
+      // })  
+       
+
+      function Number(num){
+        document.getElementById('number').innerText=num
+    }
+        document.getElementById('button-1').addEventListener('click',function(){
+          Number('1')
+        })
+           document.getElementById('button-2').addEventListener('click',function(){
+          Number('2')
+        })  
+         document.getElementById('button-3').addEventListener('click',function(){
+          Number('3')
+        })
+     document.getElementById('button-4').addEventListener('click',function(){
+          Number('4')
+        })
+  
+    </script>
+   
   </body>
 </html>
              

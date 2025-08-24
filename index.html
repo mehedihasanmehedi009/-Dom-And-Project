@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="hading1" style="color: blue">
+      1Lorem ipsum dolor sit amet consectetur adipisicing.
+    </h1>
+    <h1 id="hading2" style="color: red">
+      2Lorem ipsum dolor sit amet consectetur adipisicing.
+    </h1>
+
+    <button id="click1">button1</button>
+    <button id="click2">button2</button>
+
+    <script>
+      document.getElementById("click1").addEventListener("click", function () {
+        document.getElementById("hading2").style.display = "none";
+        document.getElementById("hading1").style.display = "block";
+      });
+      document.getElementById("click2").addEventListener("click", function () {
+        document.getElementById("hading1").style.display = "none";
+        document.getElementById("hading2").style.display = "block";
+      });
+    </script>
+  </body>
+</html>
